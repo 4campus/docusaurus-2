@@ -6,22 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: '4campus',
+  tagline: 'Reach. Connect. Transform.',
+  url: 'https://4campus.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: '4campus',
+  projectName: 'docusaurus-2',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -34,15 +30,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -53,80 +45,129 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+  themeConfig: {
+    metadata: [
+      { name: 'og:image', content: '/img/social-preview.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: '/img/social-preview.png' },
+      { name: 'og:title', content: '4Campus' },
+      { name: 'og:description', content: 'Reach, Connect, Transform' }
+    ],
+    colorMode: {
+      defaultMode: 'light',  // Set light mode as default
+      disableSwitch: false,  // Allow users to toggle themes
+      respectPrefersColorScheme: false,  // Ignore system preferences
+    },
+    navbar: {
+      title: '',
+      logo: {
+        alt: '4campus',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          type: 'doc',
+          docId: 'Guidebook',
+          position: 'left',
+          label: 'Guidebook',
         },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        {
+          type: 'doc',
+          docId: 'WAR WITHIN',
+          position: 'left',
+          label: 'WAR WITHIN',
+        },
+        {
+          to: '/my-son-rising',
+          label: 'My Son Rising',
+          position: 'left',
+        },
+        {
+          label: 'Donate',
+          href: '/give',
+          position: 'right',
+          className: 'navbar__item--donate',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Guidebook',
+              to: '/docs/guidebook',
+            },
+            {
+              label: 'WAR WITHIN',
+              to: '/docs/WAR WITHIN',
+            },
+            {
+              label: 'My Son Rising',
+              to: '/my-son-rising',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/xk6qxyZSkx',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Donate',
+              to: '/give/',
+            },
+            {
+              label: 'Contact',
+              href: 'mailto:mail.4campus@gmail.com',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} | 4campus.net`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+  },
+
+  // Correctly add the Reftagger script using the `scripts` field
+  scripts: [
+    {
+      src: 'https://api.reftagger.com/v2/RefTagger.js',
+      async: true,
+    },
+    {
+      src: 'https://api.reftagger.com/v2/RefTagger.js', // Reference the external script as src
+      type: 'text/javascript',
+      innerHTML: `
+        var refTagger = {
+          settings: {
+            bibleVersion: 'ESV'
+          }
+        };
+
+        (function(d, t) {
+          var n=d.querySelector('[nonce]');
+          refTagger.settings.nonce = n && (n.nonce || n.getAttribute('nonce'));
+          var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          g.src = 'https://api.reftagger.com/v2/RefTagger.js';
+          g.nonce = refTagger.settings.nonce;
+          s.parentNode.insertBefore(g, s);
+        }(document, 'script'));
+      `,
+    },
+  ],
 };
 
 module.exports = config;
