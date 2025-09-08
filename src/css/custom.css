@@ -1,30 +1,213 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'DM Mono', monospace;
+  --ifm-color-primary: #8C6F42;
+  --ifm-color-primary-dark: #7E633A;
+  --ifm-color-primary-darker: #705732;
+  --ifm-color-primary-darkest: #624B2A;
+  --ifm-color-primary-light: #9B7F52;
+  --ifm-color-primary-lighter: #AA8F62;
+  --ifm-color-primary-lightest: #B99F72;
+  --ifm-code-font-size: 92%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Keep dark mode colors unchanged */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #8C6F42;
+  --ifm-color-primary-dark: #7E633A;
+  --ifm-color-primary-darker: #705732;
+  --ifm-color-primary-darkest: #624B2A;
+  --ifm-color-primary-light: #9B7F52;
+  --ifm-color-primary-lighter: #AA8F62;
+  --ifm-color-primary-lightest: #B99F72;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+}
+
+/* Force Tip Box to Use Mustard Yellow */
+.alert--info {
+  background-color: #B99F72 !important;
+  border-color: #8C6F42 !important;
+  color: #4E3A24 !important;
+}
+
+/* Adjust Tip Box Color in Dark Mode */
+[data-theme='dark'] .alert--info {
+  background-color: #9B7F52 !important;
+  border-color: #7E633A !important;
+  color: #332519 !important;
+}
+
+/* Hide the Contact link by default on all screen sizes */
+.navbar .navbar__item--contact {
+  display: none;
+}
+
+/* Show the Contact link only when the navbar is expanded on mobile */
+@media (max-width: 767px) {
+  .navbar__menu--opened .navbar__item--contact {
+    display: block;
+  }
+}
+
+/* Donate button styling */
+.navbar__donate-button {
+  background-color: var(--ifm-color-primary);
+  color: gray;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--ifm-color-primary-dark);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin-left: 10px;
+  display: none;
+}
+
+/* Show Donate button on mobile */
+@media (max-width: 767px) {
+  .navbar__donate-button {
+    display: block;
+  }
+}
+
+/* Hover effect for Donate button */
+.navbar__donate-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-darker);
+}
+
+/* Adjust Donate button border in dark mode */
+[data-theme='dark'] .navbar__donate-button {
+  border-color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .navbar__donate-button:hover {
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+/* Ensure main header and subheader remain white */
+.hero__title, .hero__subtitle {
+  color: white !important;
+}
+
+/* Adjust H1 and H2 font sizes for mobile view only on the main page */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Italicize My Son Rising in Nav bar */
+
+.navbar a[href="/my-son-rising"] {
+  font-style: italic;
+}
+
+/* Button style for DESTINED */
+.preview-button,
+.preview-button2 {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 150px;
+  border: 2px solid transparent; /* Default transparent border */
+  box-sizing: border-box; /* Ensures the border does not affect the overall size */
+}
+
+/* Styling for Preview Book button */
+.preview-button {
+  color: black;
+  background-color: white;
+  border-color: black; /* Set the default border color */
+}
+
+.preview-button:hover {
+  background-color: gray;
+  color: white;
+  border-color: gray; /* Hover border color */
+}
+
+/* Styling for Buy Merch button */
+.preview-button2 {
+  color: white;
+  background-color: black;
+  border-color: white; /* Set the default border color */
+}
+
+.preview-button2:hover {
+  background-color: white;
+  color: black;
+  border-color: black; /* Hover border color */
+}
+
+/* Button container for proper alignment */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: left; /* Align buttons to the left */
+  margin-bottom: 20px; /* Space below buttons */
+}
+
+/* Hero section with banner image */
+.hero {
+  background-image: url('/img/banner.jpg'); /* Replace with your actual image path */
+  background-size: cover;      /* Ensures the image covers the container */
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat;
+  height: 400px;               /* Adjust this value as needed for desktop view */
+  padding-top: 100px;          /* Space above content */
+  padding-bottom: 50px;        /* Space below content */
+}
+
+/* Ensure hero title and subtitle remain visible over the banner */
+.hero__title,
+.hero__subtitle {
+  color: white !important;
+}
+
+/* Styling for the button inside the hero section */
+.hero__button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary-dark);
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-darker);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 250px; /* Reduced height for smaller screens */
+    padding-top: 60px;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
 }
