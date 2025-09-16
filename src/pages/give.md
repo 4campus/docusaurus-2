@@ -5,7 +5,7 @@ description: Support our community with a donation
 
 # Support Our Community
 
-[AncientPaths](https://www.ancientpaths.io/) exists to provide young men with a pathway to sexual purity and hope found in Jesus Christ. Your contributions help continue their development into maturity as faithful sons of God.
+[4campus](https://www.4campus.net/) exists to provide students with a pathway to knowing Biblical truth and experiencing eternal hope in Jesus Christ. Your contributions directly contribute to their engagement and development into spiritual sons of God.
 
 ## How to Donate
 
