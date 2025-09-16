@@ -100,10 +100,10 @@ const config = {
               label: 'AncientPaths',
               to: '/docs/AncientPaths',
             },
-            {
-              label: 'WAR WITHIN',
-              to: '/docs/WAR WITHIN',
-            },
+  //          {
+  //            label: 'WAR WITHIN',
+  //            to: '/docs/WAR WITHIN',
+  //         },
             {
               label: 'My Son Rising',
               to: '/my-son-rising',
