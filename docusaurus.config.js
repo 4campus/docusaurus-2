@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '4campus',
+  title: '',
   tagline: 'Reach. Connect. Transform.',
   url: 'https://4campus.net',
   baseUrl: '/',
@@ -67,16 +67,16 @@ const config = {
       items: [
         {
           type: 'doc',
-          docId: 'Guidebook',
+          docId: 'AncientPaths',
           position: 'left',
-          label: 'Guidebook',
+          label: 'AncientPaths',
         },
-        {
-          type: 'doc',
-          docId: 'WAR WITHIN',
-          position: 'left',
-          label: 'WAR WITHIN',
-        },
+//        {
+//          type: 'doc',
+//         docId: 'WAR WITHIN',
+//          position: 'left',
+//          label: 'WAR WITHIN',
+//        },
         {
           to: '/my-son-rising',
           label: 'My Son Rising',
@@ -97,8 +97,8 @@ const config = {
           title: 'Docs',
           items: [
             {
-              label: 'Guidebook',
-              to: '/docs/guidebook',
+              label: 'AncientPaths',
+              to: '/docs/AncientPaths',
             },
             {
               label: 'WAR WITHIN',
