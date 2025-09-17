@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '4campus',
-  tagline: 'Reach. Connect. Transform.',
+//  tagline: 'Reach. Connect. Transform.',
   url: 'https://4campus.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
