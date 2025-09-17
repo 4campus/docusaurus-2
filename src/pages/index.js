@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/my-son-rising">
-            Listen ↗
+            Listen 🔈
           </Link>
         </div>
       </div>
