@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rally.svg').default,
     description: (
       <>
-        Engage in the spiritual war for our youth and future. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community to get connected. 
+        Engage in the spiritual war for our youth and future. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community. 
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/shield.svg').default,
     description: (
       <>
-        Take offensive measures by standing your ground against oppressive systems and beliefs.
+        Take offensive measures by standing your ground against oppressive beliefs.
       </>
     ),
   },
