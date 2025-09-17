@@ -5,41 +5,44 @@
 :root {
   --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-font-family-monospace: 'DM Mono', monospace;
-  --ifm-color-primary: #8C6F42;
-  --ifm-color-primary-dark: #7E633A;
-  --ifm-color-primary-darker: #705732;
-  --ifm-color-primary-darkest: #624B2A;
-  --ifm-color-primary-light: #9B7F52;
-  --ifm-color-primary-lighter: #AA8F62;
-  --ifm-color-primary-lightest: #B99F72;
+
+  /* Primary color palette (based on #cc5e77) */
+  --ifm-color-primary: #cc5e77;
+  --ifm-color-primary-dark: #b85268;
+  --ifm-color-primary-darker: #a4465b;
+  --ifm-color-primary-darkest: #90394e;
+  --ifm-color-primary-light: #d67188;
+  --ifm-color-primary-lighter: #df8599;
+  --ifm-color-primary-lightest: #e999aa;
+
   --ifm-code-font-size: 92%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* Keep dark mode colors unchanged */
+/* Keep dark mode colors consistent with new palette */
 [data-theme='dark'] {
-  --ifm-color-primary: #8C6F42;
-  --ifm-color-primary-dark: #7E633A;
-  --ifm-color-primary-darker: #705732;
-  --ifm-color-primary-darkest: #624B2A;
-  --ifm-color-primary-light: #9B7F52;
-  --ifm-color-primary-lighter: #AA8F62;
-  --ifm-color-primary-lightest: #B99F72;
+  --ifm-color-primary: #cc5e77;
+  --ifm-color-primary-dark: #b85268;
+  --ifm-color-primary-darker: #a4465b;
+  --ifm-color-primary-darkest: #90394e;
+  --ifm-color-primary-light: #d67188;
+  --ifm-color-primary-lighter: #df8599;
+  --ifm-color-primary-lightest: #e999aa;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
 
-/* Force Tip Box to Use Mustard Yellow */
+/* Force Tip Box to Use brand accents */
 .alert--info {
-  background-color: #B99F72 !important;
-  border-color: #8C6F42 !important;
-  color: #4E3A24 !important;
+  background-color: var(--ifm-color-primary-lightest) !important;
+  border-color: var(--ifm-color-primary) !important;
+  color: #4E3A24 !important; /* you may want to darken/neutralize this text color */
 }
 
 /* Adjust Tip Box Color in Dark Mode */
 [data-theme='dark'] .alert--info {
-  background-color: #9B7F52 !important;
-  border-color: #7E633A !important;
-  color: #332519 !important;
+  background-color: var(--ifm-color-primary-light) !important;
+  border-color: var(--ifm-color-primary-dark) !important;
+  color: #332519 !important; /* adjust if too low-contrast */
 }
 
 /* Hide the Contact link by default on all screen sizes */
@@ -57,7 +60,7 @@
 /* Donate button styling */
 .navbar__donate-button {
   background-color: var(--ifm-color-primary);
-  color: gray;
+  color: white;
   padding: 6px 12px;
   border-radius: 8px;
   font-weight: 600;
@@ -108,7 +111,6 @@
 }
 
 /* Italicize My Son Rising in Nav bar */
-
 .navbar a[href="/my-son-rising"] {
   font-style: italic;
 }
@@ -126,52 +128,52 @@
   font-size: 1rem;
   min-width: 150px;
   border: 2px solid transparent; /* Default transparent border */
-  box-sizing: border-box; /* Ensures the border does not affect the overall size */
+  box-sizing: border-box;
 }
 
 /* Styling for Preview Book button */
 .preview-button {
   color: black;
   background-color: white;
-  border-color: black; /* Set the default border color */
+  border-color: black;
 }
 
 .preview-button:hover {
   background-color: gray;
   color: white;
-  border-color: gray; /* Hover border color */
+  border-color: gray;
 }
 
 /* Styling for Buy Merch button */
 .preview-button2 {
   color: white;
   background-color: black;
-  border-color: white; /* Set the default border color */
+  border-color: white;
 }
 
 .preview-button2:hover {
   background-color: white;
   color: black;
-  border-color: black; /* Hover border color */
+  border-color: black;
 }
 
 /* Button container for proper alignment */
 .button-container {
   display: flex;
-  gap: 20px; /* Space between buttons */
-  justify-content: left; /* Align buttons to the left */
-  margin-bottom: 20px; /* Space below buttons */
+  gap: 20px;
+  justify-content: left;
+  margin-bottom: 20px;
 }
 
 /* Hero section with banner image */
 .hero {
-  background-image: url('/img/banner.jpg'); /* Replace with your actual image path */
-  background-size: cover;      /* Ensures the image covers the container */
-  background-position: center; /* Centers the image within the container */
+  background-image: url('/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 400px;               /* Adjust this value as needed for desktop view */
-  padding-top: 100px;          /* Space above content */
-  padding-bottom: 50px;        /* Space below content */
+  height: 400px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 /* Ensure hero title and subtitle remain visible over the banner */
@@ -199,7 +201,7 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .hero {
-    height: 250px; /* Reduced height for smaller screens */
+    height: 250px;
     padding-top: 60px;
   }
 
