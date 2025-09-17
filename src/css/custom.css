@@ -1,10 +1,10 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-family-base: "Inter", sans-serif;
-  --ifm-font-family-monospace: "DM Mono", monospace;
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'DM Mono', monospace;
 
   /* Pink/Red balanced palette (#c64d61 base) */
   --ifm-color-primary: #c64d61;
@@ -20,7 +20,7 @@
 }
 
 /* Keep dark mode colors consistent with new palette */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --ifm-color-primary: #c64d61;
   --ifm-color-primary-dark: #b04556;
   --ifm-color-primary-darker: #9a3c4b;
@@ -39,7 +39,7 @@
 }
 
 /* Adjust Tip Box Color in Dark Mode */
-[data-theme="dark"] .alert--info {
+[data-theme='dark'] .alert--info {
   background-color: var(--ifm-color-primary-light) !important;
   border-color: var(--ifm-color-primary-dark) !important;
   color: #2b1014 !important;
@@ -87,17 +87,16 @@
 }
 
 /* Adjust Donate button border in dark mode */
-[data-theme="dark"] .navbar__donate-button {
+[data-theme='dark'] .navbar__donate-button {
   border-color: var(--ifm-color-primary-lightest);
 }
 
-[data-theme="dark"] .navbar__donate-button:hover {
+[data-theme='dark'] .navbar__donate-button:hover {
   border-color: var(--ifm-color-primary-lighter);
 }
 
 /* Ensure main header and subheader remain white */
-.hero__title,
-.hero__subtitle {
+.hero__title, .hero__subtitle {
   color: white !important;
 }
 
@@ -166,19 +165,21 @@
   margin-bottom: 20px;
 }
 
-/* Hero section with white background */
+/* Hero section with banner image */
 .hero {
-  background-color: white;
-  background-image: none;
+  background-image: url('/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 400px;
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
-/* Ensure hero title and subtitle remain visible over white background */
+/* Ensure hero title and subtitle remain visible over the banner */
 .hero__title,
 .hero__subtitle {
-  color: black !important;
+  color: white !important;
 }
 
 /* Styling for the button inside the hero section */
