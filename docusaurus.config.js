@@ -78,6 +78,12 @@ const config = {
 //          label: 'WAR WITHIN',
 //        },
         {
+          label: '"I want to listen"',
+          href: 'https://www.patreon.com/c/4Campus',
+          position: 'left',
+          className: 'navbar__item--donate',
+        },
+        {
           to: '/my-son-rising',
           label: 'My Son Rising',
           position: 'left',
