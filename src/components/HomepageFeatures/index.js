@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rally.svg').default,
     description: (
       <>
-        Engage in the spiritual war for our youth. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community. 
+        Engage in the spiritual battle for our youth. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community. 
       </>
     ),
   },
