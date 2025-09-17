@@ -6,14 +6,14 @@
   --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-font-family-monospace: 'DM Mono', monospace;
 
-  /* Darker pink/red palette */
-  --ifm-color-primary: #b23a48;
-  --ifm-color-primary-dark: #9e333f;
-  --ifm-color-primary-darker: #8a2d37;
-  --ifm-color-primary-darkest: #75262f;
-  --ifm-color-primary-light: #c1505e;
-  --ifm-color-primary-lighter: #d06674;
-  --ifm-color-primary-lightest: #df7c8a;
+  /* Pink/Red balanced palette (#c64d61 base) */
+  --ifm-color-primary: #c64d61;
+  --ifm-color-primary-dark: #b04556;
+  --ifm-color-primary-darker: #9a3c4b;
+  --ifm-color-primary-darkest: #843340;
+  --ifm-color-primary-light: #d06474;
+  --ifm-color-primary-lighter: #da7b87;
+  --ifm-color-primary-lightest: #e4939a;
 
   --ifm-code-font-size: 92%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -21,13 +21,13 @@
 
 /* Keep dark mode colors consistent with new palette */
 [data-theme='dark'] {
-  --ifm-color-primary: #b23a48;
-  --ifm-color-primary-dark: #9e333f;
-  --ifm-color-primary-darker: #8a2d37;
-  --ifm-color-primary-darkest: #75262f;
-  --ifm-color-primary-light: #c1505e;
-  --ifm-color-primary-lighter: #d06674;
-  --ifm-color-primary-lightest: #df7c8a;
+  --ifm-color-primary: #c64d61;
+  --ifm-color-primary-dark: #b04556;
+  --ifm-color-primary-darker: #9a3c4b;
+  --ifm-color-primary-darkest: #843340;
+  --ifm-color-primary-light: #d06474;
+  --ifm-color-primary-lighter: #da7b87;
+  --ifm-color-primary-lightest: #e4939a;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
 
@@ -127,7 +127,7 @@
   font-weight: 600;
   font-size: 1rem;
   min-width: 150px;
-  border: 2px solid transparent; /* Default transparent border */
+  border: 2px solid transparent;
   box-sizing: border-box;
 }
 
