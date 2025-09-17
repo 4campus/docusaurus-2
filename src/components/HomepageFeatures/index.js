@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rally.svg').default,
     description: (
       <>
-        Engage in the fight for our youth and future. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community to get connected. 
+        Engage in the spiritual war for our youth and future. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community to get connected. 
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/book.svg').default,
     description: (
       <>
-        Develop a winning strategy by destroying addictive behaviors and renewing old thought patterns with Biblical truth.
+        Develop a winning strategy by replacing cultural lies with Biblical truth.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/shield.svg').default,
     description: (
       <>
-        Take offensive measures by standing your ground against temptation and defending from porn-induced relapse.
+        Take offensive measures by standing your ground against oppressive systems and beliefs.
       </>
     ),
   },
