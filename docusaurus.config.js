@@ -65,12 +65,12 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'AncientPaths',
-          position: 'left',
-          label: 'AncientPaths',
-        },
+//        {
+//          type: 'doc',
+//          docId: 'AncientPaths',
+//          position: 'left',
+//          label: 'AncientPaths',
+//        },
 //        {
 //          type: 'doc',
 //         docId: 'WAR WITHIN',
@@ -78,15 +78,15 @@ const config = {
 //          label: 'WAR WITHIN',
 //        },
         {
-          label: '"I want to listen"',
+          label: '"I want to listen" (Patreon)',
           href: 'https://www.patreon.com/c/4Campus',
           position: 'left',
           className: 'navbar__item--donate',
         },
-        {
-          to: '/my-son-rising',
-          label: 'My Son Rising',
-          position: 'left',
+//        {
+//          to: '/my-son-rising',
+//          label: 'My Son Rising',
+//          position: 'left',
         },
         {
           label: 'Donate',
@@ -102,10 +102,10 @@ const config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'AncientPaths',
-              to: '/docs/AncientPaths',
-            },
+  //          {
+  //            label: 'AncientPaths',
+  //            to: '/docs/AncientPaths',
+  //          },
   //          {
   //            label: 'WAR WITHIN',
   //            to: '/docs/WAR WITHIN',
