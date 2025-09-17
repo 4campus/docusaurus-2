@@ -1,15 +1,202 @@
-/* Hero section with gradient background instead of image */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'DM Mono', monospace;
+
+  /* Pink/Red balanced palette (#c64d61 base) */
+  --ifm-color-primary: #c64d61;
+  --ifm-color-primary-dark: #b04556;
+  --ifm-color-primary-darker: #9a3c4b;
+  --ifm-color-primary-darkest: #843340;
+  --ifm-color-primary-light: #d06474;
+  --ifm-color-primary-lighter: #da7b87;
+  --ifm-color-primary-lightest: #e4939a;
+
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Keep dark mode colors consistent with new palette */
+[data-theme='dark'] {
+  --ifm-color-primary: #c64d61;
+  --ifm-color-primary-dark: #b04556;
+  --ifm-color-primary-darker: #9a3c4b;
+  --ifm-color-primary-darkest: #843340;
+  --ifm-color-primary-light: #d06474;
+  --ifm-color-primary-lighter: #da7b87;
+  --ifm-color-primary-lightest: #e4939a;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+}
+
+/* Force Tip Box to Use brand accents */
+.alert--info {
+  background-color: var(--ifm-color-primary-lightest) !important;
+  border-color: var(--ifm-color-primary) !important;
+  color: #4a1f25 !important; /* deep wine text */
+}
+
+/* Adjust Tip Box Color in Dark Mode */
+[data-theme='dark'] .alert--info {
+  background-color: var(--ifm-color-primary-light) !important;
+  border-color: var(--ifm-color-primary-dark) !important;
+  color: #2b1014 !important;
+}
+
+/* Hide the Contact link by default on all screen sizes */
+.navbar .navbar__item--contact {
+  display: none;
+}
+
+/* Show the Contact link only when the navbar is expanded on mobile */
+@media (max-width: 767px) {
+  .navbar__menu--opened .navbar__item--contact {
+    display: block;
+  }
+}
+
+/* Donate button styling */
+.navbar__donate-button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--ifm-color-primary-dark);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin-left: 10px;
+  display: none;
+}
+
+/* Show Donate button on mobile */
+@media (max-width: 767px) {
+  .navbar__donate-button {
+    display: block;
+  }
+}
+
+/* Hover effect for Donate button */
+.navbar__donate-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-darker);
+}
+
+/* Adjust Donate button border in dark mode */
+[data-theme='dark'] .navbar__donate-button {
+  border-color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .navbar__donate-button:hover {
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+/* Ensure main header and subheader remain white */
+.hero__title, .hero__subtitle {
+  color: white !important;
+}
+
+/* Adjust H1 and H2 font sizes for mobile view only on the main page */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Italicize My Son Rising in Nav bar */
+.navbar a[href="/my-son-rising"] {
+  font-style: italic;
+}
+
+/* Button style for DESTINED */
+.preview-button,
+.preview-button2 {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 150px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+/* Styling for Preview Book button */
+.preview-button {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.preview-button:hover {
+  background-color: gray;
+  color: white;
+  border-color: gray;
+}
+
+/* Styling for Buy Merch button */
+.preview-button2 {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.preview-button2:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/* Button container for proper alignment */
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+/* Hero section with banner image + gradient fallback */
 .hero {
-  background: linear-gradient(to bottom, #c64d61 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #c64d61 0%, #ffffff 100%), 
+              url('/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 400px;
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
-/* Ensure hero title and subtitle remain visible */
+/* Ensure hero title and subtitle remain visible over the banner */
 .hero__title,
 .hero__subtitle {
   color: white !important;
+}
+
+/* Styling for the button inside the hero section */
+.hero__button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary-dark);
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hero__button:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-darker);
 }
 
 /* Mobile adjustments */
