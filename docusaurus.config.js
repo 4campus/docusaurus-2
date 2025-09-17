@@ -100,12 +100,12 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Resources',
           items: [
-  //          {
-  //            label: 'AncientPaths',
-  //            to: '/docs/AncientPaths',
-  //          },
+            {
+              label: 'AncientPaths',
+              to: '/docs/AncientPaths',
+            },
   //          {
   //            label: 'WAR WITHIN',
   //            to: '/docs/WAR WITHIN',
