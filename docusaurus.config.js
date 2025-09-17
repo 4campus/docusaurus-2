@@ -87,7 +87,7 @@ const config = {
 //          to: '/my-son-rising',
 //          label: 'My Son Rising',
 //          position: 'left',
-        },
+//        },
         {
           label: 'Donate',
           href: '/give',
