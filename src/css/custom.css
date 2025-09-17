@@ -176,6 +176,11 @@
   padding-bottom: 50px;
 }
 
+/* Override bottom footer background color */
+.footer {
+  background-color: #737373 !important;
+}
+
 /* Ensure hero title and subtitle remain visible over the banner */
 .hero__title,
 .hero__subtitle {
