@@ -5,9 +5,9 @@ description: Real students sharing honest conversations about life and faith
 
 # Voices
 
-In-person conversations with students and community leaders about truth and the culture. *This is the heartbeat of 4campus.*
+In-person conversations with students and leaders about truth in the culture. *This is the heartbeat of 4campus.*
 
-![MSR](/img/jason2.png)
+![MSR](/img/jason.png)
 
 ## Listen Now
 
