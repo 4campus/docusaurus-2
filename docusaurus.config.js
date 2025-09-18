@@ -88,11 +88,11 @@ const config = {
           position: 'left',
           className: 'navbar__item--donate',
         },
-        {
-          label: 'Community (Discord)',
-          href: 'https://discord.gg/Tb478Cud',
-          position: 'left',
-        },
+  //      {
+  //        label: 'Community (Discord)',
+  //        href: 'https://discord.gg/Tb478Cud',
+  //        position: 'left',
+  //      },
         {
           href: 'https://www.bonfire.com/4campus/',
           label: 'Store',
@@ -126,15 +126,15 @@ const config = {
             },
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/Tb478Cud',
-            },
-          ],
-        },
+//        {
+//          title: 'Community',
+//          items: [
+//            {
+//              label: 'Discord',
+//              href: 'https://discord.gg/Tb478Cud',
+//            },
+//          ],
+//        },
         {
           title: 'More',
           items: [
