@@ -9,10 +9,10 @@ description: Support our community with a donation
 
 ## How to Donate
 
-💸 **CashApp:** [Donate](https://cash.me/$ancientpathsio)  
-💳 **PayPal:** [Donate](https://www.paypal.com/ncp/payment/5UEDTRTKWPZVC)  
-🪙 **BTC:** [Send Crypto](https://cash.me/$ancientpathsio)  
-📬 **Check/Money Order:** [Email for Address](mailto:ancientpaths.io@gmail.com)
+💸 **CashApp:** [Donate](https://cash.me/$4campus)  
+💳 **PayPal:** [Donate](https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ)  
+🪙 **BTC:** [Send Crypto](https://cash.me/$4campus)  
+📬 **Check/Money Order:** [Email for Address](mailto:mail.4campus@gmail.com)
 
 ![Handshake](/img/handshake.png)
 
