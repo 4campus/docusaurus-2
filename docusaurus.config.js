@@ -78,10 +78,15 @@ const config = {
 //          label: 'WAR WITHIN',
 //        },
         {
-          label: '"I want to listen" (Patreon)',
+          label: '"I want to listen"',
           href: 'https://www.patreon.com/c/4Campus',
           position: 'left',
           className: 'navbar__item--donate',
+        },
+        {
+          label: 'Community (Discord)',
+          href: 'https://discord.gg/Tb478Cud',
+          position: 'left',
         },
         {
           href: 'https://www.bonfire.com/4campus/',
