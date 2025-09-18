@@ -83,11 +83,11 @@ const config = {
           position: 'left',
           className: 'navbar__item--donate',
         },
-//        {
-//          to: '/my-son-rising',
-//          label: 'My Son Rising',
-//          position: 'left',
-//        },
+        {
+          href: 'https://www.bonfire.com/4campus/',
+          label: 'Store',
+          position: 'left',
+        },
         {
           label: 'Donate',
           href: '/give',
