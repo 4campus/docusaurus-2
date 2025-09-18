@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const AudioVoicesPlayer = () => {
+const AudioPlayer2 = () => {
   const [isClient, setIsClient] = useState(false);
   const [currentTrack, setCurrentTrack] = useState(0);
   const audioVoicesRef = useRef(null);
