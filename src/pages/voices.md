@@ -11,7 +11,7 @@ In-person conversations with students and leaders about truth in the culture. *T
 
 ## Listen Now
 
-import AudioPlayer2 from '@site/src/components/HomepageFeatures/AudioVoicesPlayer';
+import AudioPlayer2 from '@site/src/components/HomepageFeatures/AudioPlayer2';
 
 <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
   <div style={{ textAlign: "left" }}>
