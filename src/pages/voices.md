@@ -7,7 +7,7 @@ description: Real students sharing honest conversations about life and faith
 
 In-person conversations with students and leaders about truth in the culture. *This is the heartbeat of 4campus.*
 
-![MSR](/img/jason.png)
+![Jason](/img/jason.png)
 
 ## Listen Now
 
