@@ -7,14 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '4campus',
-//  tagline: 'Reach. Connect. Transform.',
+  // tagline: 'Reach. Connect. Transform.',
   url: 'https://4campus.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
   organizationName: '4campus',
   projectName: 'docusaurus-2',
 
@@ -51,12 +50,12 @@ const config = {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:image', content: '/img/social-preview.png' },
       { name: 'og:title', content: '4Campus' },
-      { name: 'og:description', content: 'Reach, Connect, Transform' }
+      { name: 'og:description', content: 'Reach, Connect, Transform' },
     ],
     colorMode: {
-      defaultMode: 'light',  // Set light mode as default
-      disableSwitch: false,  // Allow users to toggle themes
-      respectPrefersColorScheme: false,  // Ignore system preferences
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: '',
@@ -65,18 +64,6 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-//        {
-//          type: 'doc',
-//          docId: 'AncientPaths',
-//          position: 'left',
-//          label: 'AncientPaths',
-//        },
-//        {
-//          type: 'doc',
-//         docId: 'WAR WITHIN',
-//          position: 'left',
-//          label: 'WAR WITHIN',
-//        },
         {
           label: 'Voices',
           href: '/voices',
@@ -86,13 +73,8 @@ const config = {
           label: 'Documentary',
           href: '/documentary',
           position: 'left',
-          className: 'navbar__item--donate',
+          className: 'navbar__item--donate', // styled as Give link
         },
- //       {
- //         label: 'Community (Discord)',
- //         href: 'https://discord.gg/Tb478Cud',
- //         position: 'left',
- //       },
         {
           href: 'https://www.bonfire.com/4campus/',
           label: 'Store',
@@ -102,7 +84,7 @@ const config = {
           label: 'Give',
           href: '/give',
           position: 'right',
-          className: 'navbar__item--donate',
+          className: 'navbar__item--donate', // ensures CSS styling applies
         },
       ],
     },
@@ -116,10 +98,6 @@ const config = {
               label: 'AncientPaths',
               to: '/docs/AncientPaths',
             },
-  //          {
-  //            label: 'WAR WITHIN',
-  //            to: '/docs/WAR WITHIN',
-  //         },
             {
               label: 'My Son Rising',
               to: '/my-son-rising',
@@ -138,10 +116,6 @@ const config = {
         {
           title: 'More',
           items: [
- //           {
- //             label: 'Donate',
- //             to: '/give/',
- //           },
             {
               label: 'Contact',
               href: 'mailto:mail.4campus@gmail.com',
@@ -157,14 +131,13 @@ const config = {
     },
   },
 
-  // Correctly add the Reftagger script using the `scripts` field
   scripts: [
     {
       src: 'https://api.reftagger.com/v2/RefTagger.js',
       async: true,
     },
     {
-      src: 'https://api.reftagger.com/v2/RefTagger.js', // Reference the external script as src
+      src: 'https://api.reftagger.com/v2/RefTagger.js',
       type: 'text/javascript',
       innerHTML: `
         var refTagger = {
