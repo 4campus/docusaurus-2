@@ -66,7 +66,7 @@ const config = {
       items: [
         {
           label: 'Voices',
-          href: '/voices#latest-recordings',
+          href: '/voices',
           position: 'left',
         },
         {
@@ -83,22 +83,22 @@ const config = {
         {
           label: 'About',
           href: '/give',
-          position: 'left', // Moved to the left
+          position: 'left',
           className: 'navbar__item--about-desktop',
         },
-        // Mobile About link
+        // Mobile About link (in hamburger)
         {
           label: 'About',
           href: '/give',
           position: 'left',
           className: 'navbar__item--about-mobile',
         },
-        // Mobile Give link (in hamburger menu)
+        // Mobile Give link (outside hamburger)
         {
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
-          position: 'left',
-          className: 'navbar__item--give-mobile-hamburger',
+          position: 'right',
+          className: 'navbar__item--give-mobile-right',
         },
         // Desktop Give button
         {
