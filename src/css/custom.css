@@ -55,10 +55,14 @@
   }
 }
 
-/* Donate button */
+/* Donate button on Navbar */
+.navbar__item--donate .navbar__link,
+.navbar__item--donate .navbar__link span {
+  color: #fff !important;
+}
+
 .navbar__item--donate .navbar__link {
   background-color: var(--ifm-color-primary);
-  color: #fff !important; /* always white */
   padding: 0.4rem 1rem;
   border-radius: 999px;
   font-weight: 600;
@@ -69,17 +73,17 @@
 .navbar__item--donate .navbar__link:hover {
   background-color: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-darker);
-  color: #fff !important; /* enforce white on hover */
+  color: #fff !important;
 }
 
 [data-theme="dark"] .navbar__item--donate .navbar__link {
   border-color: var(--ifm-color-primary-lightest);
-  color: #fff !important; /* enforce white in dark mode */
+  color: #fff !important;
 }
 
 [data-theme="dark"] .navbar__item--donate .navbar__link:hover {
   border-color: var(--ifm-color-primary-lighter);
-  color: #fff !important; /* enforce white in dark hover */
+  color: #fff !important;
 }
 
 /* Hero */
@@ -188,4 +192,25 @@
 /* Footer */
 .footer {
   background-color: #737373 !important;
+}
+
+/* Give page button - always white text */
+.give-button,
+.give-button.button--primary {
+  color: #fff !important; /* always white */
+  background-color: var(--ifm-color-primary) !important;
+  border-color: var(--ifm-color-primary-dark) !important;
+}
+
+.give-button.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark) !important;
+  border-color: var(--ifm-color-primary-darker) !important;
+  color: #fff !important;
+}
+
+.give-button.button--lg {
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
 }
