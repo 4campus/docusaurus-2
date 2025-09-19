@@ -8,7 +8,7 @@ description: How a crew of ragtag missionaries responded to 14 student deaths at
 ## Support the Project
 
 <a
-  href="https://your-donation-link.com"
+  href="https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ"
   class="button button--primary button--lg"
   target="_blank"
 >
