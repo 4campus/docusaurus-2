@@ -83,7 +83,7 @@ const config = {
         {
           label: 'About',
           href: '/give',
-          position: 'right',
+          position: 'left', // Moved to the left
           className: 'navbar__item--about-desktop',
         },
         // Mobile About link
@@ -93,12 +93,12 @@ const config = {
           position: 'left',
           className: 'navbar__item--about-mobile',
         },
-        // Mobile Give link
+        // Mobile Give link (in hamburger menu)
         {
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
           position: 'left',
-          className: 'navbar__item--give-mobile',
+          className: 'navbar__item--give-mobile-hamburger',
         },
         // Desktop Give button
         {
