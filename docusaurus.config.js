@@ -81,14 +81,14 @@ const config = {
         },
         // Desktop About link
         {
-          label: 'About',
+          label: 'About Us',
           href: '/give',
           position: 'left', // Moved to the left
           className: 'navbar__item--about-desktop',
         },
         // Mobile About link
         {
-          label: 'About',
+          label: 'About Us',
           href: '/give',
           position: 'left',
           className: 'navbar__item--about-mobile',
