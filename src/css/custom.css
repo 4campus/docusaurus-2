@@ -216,3 +216,9 @@
   border-radius: 8px;
   text-decoration: none;
 }
+
+/* Give page button spacing */
+.give-button {
+  margin: 2rem 0; /* 2rem top & bottom spacing */
+  display: inline-block; /* ensures spacing works correctly */
+}
