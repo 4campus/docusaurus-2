@@ -73,7 +73,7 @@ const config = {
           label: 'Documentary',
           href: '/documentary',
           position: 'left',
-          className: 'navbar__item--donate', // styled as Give link
+          // NO CLASSNAME HERE: This is what was causing the issue.
         },
         {
           href: 'https://www.bonfire.com/4campus/',
@@ -84,7 +84,7 @@ const config = {
           label: 'Give',
           href: '/give',
           position: 'right',
-          className: 'navbar__item--donate', // ensures CSS styling applies
+          className: 'navbar__item--donate', // Correctly applying the class here.
         },
       ],
     },
