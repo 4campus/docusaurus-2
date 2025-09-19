@@ -99,7 +99,7 @@ const config = {
           position: 'left',
         },
         {
-          label: 'Donate',
+          label: 'Give',
           href: '/give',
           position: 'right',
           className: 'navbar__item--donate',
@@ -138,10 +138,10 @@ const config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Donate',
-              to: '/give/',
-            },
+ //           {
+ //             label: 'Donate',
+ //             to: '/give/',
+ //           },
             {
               label: 'Contact',
               href: 'mailto:mail.4campus@gmail.com',
