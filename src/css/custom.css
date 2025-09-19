@@ -91,14 +91,12 @@
 /* Give link in navbar - mobile safe */
 @media (max-width: 767px) {
   .navbar__item--donate {
-    order: 1; /* keep it after the hamburger icon */
-    margin-left: 0; /* remove auto margin */
+    order: 1;
+    margin-left: 0;
     display: flex;
     align-items: center;
   }
 }
-
-/* Documentary link is now visible on mobile, so no hide rule is needed */
 
 /* Hero section */
 .hero {
@@ -210,7 +208,7 @@
 
 /* Give page button - always white text in both light and dark mode */
 .give-button {
-  color: #fff !important; /* Force white text on the button itself */
+  color: #fff !important;
 }
 
 .give-button,
@@ -218,7 +216,7 @@
   background-color: var(--ifm-color-primary) !important;
   border-color: var(--ifm-color-primary-dark) !important;
   text-decoration: none !important;
-  mix-blend-mode: normal !important; /* prevent cut-out effect */
+  mix-blend-mode: normal !important;
 }
 
 /* Dark mode specific for Give button to ensure white text */
@@ -241,13 +239,13 @@
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 2rem; /* space above */
-  margin-bottom: 4rem; /* increased space below for Audible image */
+  margin-top: 0.5rem; /* Reduced space above */
+  margin-bottom: 1rem; /* Reduced space below */
 }
 
 /* Mobile-specific spacing */
 @media (max-width: 767px) {
   .give-button.button--lg {
-    margin-bottom: 2.5rem; /* smaller on mobile to fit screen */
+    margin-bottom: 1rem;
   }
 }
