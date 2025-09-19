@@ -55,7 +55,7 @@
   }
 }
 
-/* Navbar Donate button */
+/* Navbar Donate / Give link */
 .navbar__item--donate .navbar__link,
 .navbar__item--donate .navbar__link span {
   color: #fff !important;
@@ -70,12 +70,14 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Hover for navbar donate link */
 .navbar__item--donate .navbar__link:hover {
   background-color: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-darker);
   color: #fff !important;
 }
 
+/* Dark mode navbar donate */
 [data-theme="dark"] .navbar__item--donate .navbar__link {
   border-color: var(--ifm-color-primary-lightest);
   color: #fff !important;
@@ -84,6 +86,16 @@
 [data-theme="dark"] .navbar__item--donate .navbar__link:hover {
   border-color: var(--ifm-color-primary-lighter);
   color: #fff !important;
+}
+
+/* Show Give link on top-right in mobile */
+@media (max-width: 767px) {
+  .navbar__item--donate {
+    order: -1; /* Move it to the far right */
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Hero section */
@@ -194,15 +206,17 @@
   background-color: #737373 !important;
 }
 
-/* Give page button - always white text */
+/* Give page button - always white text in both light and dark mode */
 .give-button,
 .give-button * {
-  color: #fff !important; /* force white on all nested elements */
+  color: #fff !important; /* Force white text */
   background-color: var(--ifm-color-primary) !important;
   border-color: var(--ifm-color-primary-dark) !important;
   text-decoration: none !important;
+  mix-blend-mode: normal !important; /* prevent cut-out effect */
 }
 
+/* Hover effect */
 .give-button:hover,
 .give-button *:hover {
   background-color: var(--ifm-color-primary-dark) !important;
@@ -210,15 +224,12 @@
   color: #fff !important;
 }
 
+/* Give button large size and spacing */
 .give-button.button--lg {
   padding: 12px 24px;
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
-}
-
-/* Give page button spacing */
-.give-button {
-  margin: 2rem 0; /* 2rem top & bottom spacing */
-  display: inline-block; /* ensures spacing works correctly */
+  margin-top: 2rem;   /* spacing above */
+  margin-bottom: 3rem; /* spacing below for Audible.png image */
 }
