@@ -91,8 +91,8 @@
 /* Show Give link on top-right in mobile */
 @media (max-width: 767px) {
   .navbar__item--donate {
-    order: -1; /* Move it to the far right */
-    margin-left: auto;
+    order: 1; /* keep it after the hamburger icon */
+    margin-left: 0; /* remove auto margin */
     display: flex;
     align-items: center;
   }
@@ -230,6 +230,13 @@
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 2rem;   /* spacing above */
-  margin-bottom: 3rem; /* spacing below for Audible.png image */
+  margin-top: 2rem; /* space above */
+  margin-bottom: 4rem; /* increased space below */
+}
+
+/* Mobile-specific spacing */
+@media (max-width: 767px) {
+  .give-button.button--lg {
+    margin-bottom: 2.5rem; /* smaller on mobile to fit screen */
+  }
 }
