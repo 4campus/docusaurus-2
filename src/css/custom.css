@@ -100,7 +100,7 @@
 
 /* Documentary link - hide on mobile */
 @media (max-width: 767px) {
-  .navbar a[href="/my-son-rising"] {
+  .navbar a[href="/documentary"] {
     display: none;
   }
 }
@@ -229,6 +229,12 @@
   background-color: var(--ifm-color-primary-dark) !important;
   border-color: var(--ifm-color-primary-darker) !important;
   color: #fff !important;
+}
+
+/* Give button text on dark mode */
+[data-theme="dark"] .give-button,
+[data-theme="dark"] .give-button * {
+  color: #fff !important; /* Ensure white text in dark mode */
 }
 
 /* Give button large size and spacing */
