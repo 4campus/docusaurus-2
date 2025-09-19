@@ -3,7 +3,7 @@ title: Give
 description: Learn how our community is making an impact on the next generation.
 ---
 
-# About 4campus
+# About Us
 
 [4campus](https://www.4campus.net/) exists to provide students with a pathway to knowing Biblical truth and experiencing eternal hope in Jesus Christ. Your financial investments directly support their emotional and spiritual maturity.
 
