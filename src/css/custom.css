@@ -242,8 +242,8 @@
   }
 
   /* Make sure the mobile links are visible */
-  .navbar__item--give-mobile,
-  .navbar__item--about-mobile {
+  .navbar__item--about-mobile,
+  .navbar__item--give-mobile-hamburger {
     display: block;
   }
 }
@@ -251,7 +251,7 @@
 @media (min-width: 997px) {
   /* Hide mobile About and Give links on desktop */
   .navbar__item--about-mobile,
-  .navbar__item--give-mobile {
+  .navbar__item--give-mobile-hamburger {
     display: none;
   }
 
