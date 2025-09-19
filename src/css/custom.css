@@ -243,16 +243,26 @@
   margin-bottom: 1rem;
 }
 
-/* Hide desktop "Give" button on mobile */
+/* Media query to style the "About" link in the mobile menu */
 @media (max-width: 996px) {
-  .navbar__item--donate {
+  /* Remove button styling from the mobile nav item */
+  .navbar__item--donate .navbar__link {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Remove the icon for external link on mobile for this specific item */
+  .navbar__item--donate a[target="_blank"]::after {
     display: none;
   }
-}
 
-/* Hide mobile "About" link on desktop */
-@media (min-width: 997px) {
-  .navbar__item--about {
-    display: none;
+  .navbar__item--donate .navbar__link:hover {
+    background: none;
+  }
+
+  [data-theme="dark"] .navbar__item--donate .navbar__link {
+    border: none;
+    color: #fff !important;
   }
 }
