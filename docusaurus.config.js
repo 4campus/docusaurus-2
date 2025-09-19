@@ -82,7 +82,7 @@ const config = {
         },
         {
           label: 'Give',
-          href: '/give',
+          href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
           position: 'right',
           className: 'navbar__item--donate', // Correctly applied to the "Give" link
         },
