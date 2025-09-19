@@ -9,7 +9,7 @@ In the spring of 2023, the campus of North Carolina State University witnessed i
 
 *"I want to listen"* is a full-length audio-documentary exploring the real voices of students, community leaders, and thought experts on issues surrounding mental health, spirituality, and their lasting effects on today's youth and culture.
 
-![Jason](/img/interview.png)
+![Jason](/img/audible.png)
 
 ## Support the Project
 
@@ -18,5 +18,5 @@ In the spring of 2023, the campus of North Carolina State University witnessed i
   class="button button--primary button--lg"
   target="_blank"
 >
-  Give ❤️
+  Give 💗
 </a>
