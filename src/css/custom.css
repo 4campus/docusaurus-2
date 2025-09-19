@@ -88,13 +88,20 @@
   color: #fff !important;
 }
 
-/* Show Give link on top-right in mobile */
+/* Give link in navbar - mobile safe */
 @media (max-width: 767px) {
   .navbar__item--donate {
     order: 1; /* keep it after the hamburger icon */
     margin-left: 0; /* remove auto margin */
     display: flex;
     align-items: center;
+  }
+}
+
+/* Documentary link - hide on mobile */
+@media (max-width: 767px) {
+  .navbar a[href="/my-son-rising"] {
+    display: none;
   }
 }
 
