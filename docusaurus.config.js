@@ -73,19 +73,39 @@ const config = {
           label: 'Documentary',
           href: '/documentary',
           position: 'left',
-          // NO CLASSNAME HERE to keep it in the hamburger menu
         },
         {
           href: 'https://www.bonfire.com/4campus/',
           label: 'Store',
           position: 'left',
         },
+        // Desktop About link
         {
-          // Change this label from 'Give' to 'About'
           label: 'About',
           href: '/give',
           position: 'right',
-          className: 'navbar__item--donate', // Keep this class for styling
+          className: 'navbar__item--about-desktop',
+        },
+        // Mobile About link
+        {
+          label: 'About',
+          href: '/give',
+          position: 'left',
+          className: 'navbar__item--about-mobile',
+        },
+        // Mobile Give link
+        {
+          label: 'Give',
+          href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
+          position: 'left',
+          className: 'navbar__item--give-mobile',
+        },
+        // Desktop Give button
+        {
+          label: 'Give',
+          href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
+          position: 'right',
+          className: 'navbar__item--give-desktop',
         },
       ],
     },
