@@ -98,12 +98,7 @@
   }
 }
 
-/* Documentary link - hide on mobile */
-@media (max-width: 767px) {
-  .navbar a[href="/documentary"] {
-    display: none;
-  }
-}
+/* Documentary link is now visible on mobile, so no hide rule is needed */
 
 /* Hero section */
 .hero {
@@ -214,13 +209,22 @@
 }
 
 /* Give page button - always white text in both light and dark mode */
+.give-button {
+  color: #fff !important; /* Force white text on the button itself */
+}
+
 .give-button,
 .give-button * {
-  color: #fff !important; /* Force white text */
   background-color: var(--ifm-color-primary) !important;
   border-color: var(--ifm-color-primary-dark) !important;
   text-decoration: none !important;
   mix-blend-mode: normal !important; /* prevent cut-out effect */
+}
+
+/* Dark mode specific for Give button to ensure white text */
+[data-theme="dark"] .give-button,
+[data-theme="dark"] .give-button * {
+  color: #fff !important;
 }
 
 /* Hover effect */
@@ -231,12 +235,6 @@
   color: #fff !important;
 }
 
-/* Give button text on dark mode */
-[data-theme="dark"] .give-button,
-[data-theme="dark"] .give-button * {
-  color: #fff !important; /* Ensure white text in dark mode */
-}
-
 /* Give button large size and spacing */
 .give-button.button--lg {
   padding: 12px 24px;
@@ -244,7 +242,7 @@
   border-radius: 8px;
   text-decoration: none;
   margin-top: 2rem; /* space above */
-  margin-bottom: 4rem; /* increased space below */
+  margin-bottom: 4rem; /* increased space below for Audible image */
 }
 
 /* Mobile-specific spacing */
