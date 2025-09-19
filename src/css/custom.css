@@ -3,249 +3,249 @@
 
 /* Override Infima variables */
 :root {
-  --ifm-font-family-base: "Inter", sans-serif;
-  --ifm-font-family-monospace: "DM Mono", monospace;
+  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-font-family-monospace: "DM Mono", monospace;
 
-  /* Pink/Red balanced palette (#c64d61 base) */
-  --ifm-color-primary: #c64d61;
-  --ifm-color-primary-dark: #b04556;
-  --ifm-color-primary-darker: #9a3c4b;
-  --ifm-color-primary-darkest: #843340;
-  --ifm-color-primary-light: #d06474;
-  --ifm-color-primary-lighter: #da7b87;
-  --ifm-color-primary-lightest: #e4939a;
+  /* Pink/Red balanced palette (#c64d61 base) */
+  --ifm-color-primary: #c64d61;
+  --ifm-color-primary-dark: #b04556;
+  --ifm-color-primary-darker: #9a3c4b;
+  --ifm-color-primary-darkest: #843340;
+  --ifm-color-primary-light: #d06474;
+  --ifm-color-primary-lighter: #da7b87;
+  --ifm-color-primary-lightest: #e4939a;
 
-  --ifm-code-font-size: 92%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode palette */
 [data-theme="dark"] {
-  --ifm-color-primary: #c64d61;
-  --ifm-color-primary-dark: #b04556;
-  --ifm-color-primary-darker: #9a3c4b;
-  --ifm-color-primary-darkest: #843340;
-  --ifm-color-primary-light: #d06474;
-  --ifm-color-primary-lighter: #da7b87;
-  --ifm-color-primary-lightest: #e4939a;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+  --ifm-color-primary: #c64d61;
+  --ifm-color-primary-dark: #b04556;
+  --ifm-color-primary-darker: #9a3c4b;
+  --ifm-color-primary-darkest: #843340;
+  --ifm-color-primary-light: #d06474;
+  --ifm-color-primary-lighter: #da7b87;
+  --ifm-color-primary-lightest: #e4939a;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
 }
 
 /* Tip box */
 .alert--info {
-  background-color: var(--ifm-color-primary-lightest) !important;
-  border-color: var(--ifm-color-primary) !important;
-  color: #4a1f25 !important;
+  background-color: var(--ifm-color-primary-lightest) !important;
+  border-color: var(--ifm-color-primary) !important;
+  color: #4a1f25 !important;
 }
 
 [data-theme="dark"] .alert--info {
-  background-color: var(--ifm-color-primary-light) !important;
-  border-color: var(--ifm-color-primary-dark) !important;
-  color: #2b1014 !important;
+  background-color: var(--ifm-color-primary-light) !important;
+  border-color: var(--ifm-color-primary-dark) !important;
+  color: #2b1014 !important;
 }
 
 /* Contact link hidden except mobile menu */
 .navbar .navbar__item--contact {
-  display: none;
+  display: none;
 }
 
 @media (max-width: 767px) {
-  .navbar__menu--opened .navbar__item--contact {
-    display: block;
-  }
+  .navbar__menu--opened .navbar__item--contact {
+    display: block;
+  }
 }
 
 /* Navbar Donate / Give link */
 .navbar__item--donate .navbar__link,
 .navbar__item--donate .navbar__link span {
-  color: #fff !important;
+  color: #fff !important;
 }
 
 .navbar__item--donate .navbar__link {
-  background-color: var(--ifm-color-primary);
-  padding: 0.4rem 1rem;
-  border-radius: 999px;
-  font-weight: 600;
-  border: 2px solid var(--ifm-color-primary-dark);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-color: var(--ifm-color-primary);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 2px solid var(--ifm-color-primary-dark);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Hover for navbar donate link */
 .navbar__item--donate .navbar__link:hover {
-  background-color: var(--ifm-color-primary-dark);
-  border-color: var(--ifm-color-primary-darker);
-  color: #fff !important;
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-darker);
+  color: #fff !important;
 }
 
 /* Dark mode navbar donate */
 [data-theme="dark"] .navbar__item--donate .navbar__link {
-  border-color: var(--ifm-color-primary-lightest);
-  color: #fff !important;
+  border-color: var(--ifm-color-primary-lightest);
+  color: #fff !important;
 }
 
 [data-theme="dark"] .navbar__item--donate .navbar__link:hover {
-  border-color: var(--ifm-color-primary-lighter);
-  color: #fff !important;
+  border-color: var(--ifm-color-primary-lighter);
+  color: #fff !important;
 }
 
 /* Give link in navbar - mobile safe */
 @media (max-width: 767px) {
-  .navbar__item--donate {
-    order: 1;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-  }
+  .navbar__item--donate {
+    order: 1;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Hero section */
 .hero {
-  background-image: url("/img/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  background-image: url("/img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .hero__title,
 .hero__subtitle {
-  color: #fff !important;
+  color: #fff !important;
 }
 
 .hero__button {
-  background-color: var(--ifm-color-primary);
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 2px solid var(--ifm-color-primary-dark);
-  font-weight: 600;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-primary-dark);
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .hero__button:hover {
-  background-color: var(--ifm-color-primary-dark);
-  border-color: var(--ifm-color-primary-darker);
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-darker);
 }
 
 /* Hero responsiveness */
 @media (max-width: 768px) {
-  .hero {
-    height: 250px;
-    padding-top: 60px;
-  }
+  .hero {
+    height: 250px;
+    padding-top: 60px;
+  }
 
-  .hero__title {
-    font-size: 2rem;
-  }
+  .hero__title {
+    font-size: 2rem;
+  }
 
-  .hero__subtitle {
-    font-size: 1rem;
-  }
+  .hero__subtitle {
+    font-size: 1rem;
+  }
 }
 
 /* Nav tweak */
 .navbar a[href="/my-son-rising"] {
-  font-style: italic;
+  font-style: italic;
 }
 
 /* Buttons for DESTINED */
 .preview-button,
 .preview-button2 {
-  display: inline-block;
-  padding: 10px 24px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
-  min-width: 150px;
-  border: 2px solid transparent;
-  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 150px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 /* Preview Book */
 .preview-button {
-  color: #000;
-  background-color: #fff;
-  border-color: #000;
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
 }
 
 .preview-button:hover {
-  background-color: gray;
-  color: #fff;
-  border-color: gray;
+  background-color: gray;
+  color: #fff;
+  border-color: gray;
 }
 
 /* Buy Merch */
 .preview-button2 {
-  color: #fff;
-  background-color: #000;
-  border-color: #fff;
+  color: #fff;
+  background-color: #000;
+  border-color: #fff;
 }
 
 .preview-button2:hover {
-  background-color: #fff;
-  color: #000;
-  border-color: #000;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
 }
 
 /* Button container */
 .button-container {
-  display: flex;
-  gap: 20px;
-  justify-content: left;
-  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-bottom: 20px;
 }
 
 /* Footer */
 .footer {
-  background-color: #737373 !important;
+  background-color: #737373 !important;
 }
 
 /* Give page button - always white text in both light and dark mode */
 .give-button {
-  color: #fff !important;
+  color: #fff !important;
 }
 
 .give-button,
 .give-button * {
-  background-color: var(--ifm-color-primary) !important;
-  border-color: var(--ifm-color-primary-dark) !important;
-  text-decoration: none !important;
-  mix-blend-mode: normal !important;
+  background-color: var(--ifm-color-primary) !important;
+  border-color: var(--ifm-color-primary-dark) !important;
+  text-decoration: none !important;
+  mix-blend-mode: normal !important;
 }
 
 /* Dark mode specific for Give button to ensure white text */
 [data-theme="dark"] .give-button,
 [data-theme="dark"] .give-button * {
-  color: #fff !important;
+  color: #fff !important;
 }
 
 /* Hover effect */
 .give-button:hover,
 .give-button *:hover {
-  background-color: var(--ifm-color-primary-dark) !important;
-  border-color: var(--ifm-color-primary-darker) !important;
-  color: #fff !important;
+  background-color: var(--ifm-color-primary-dark) !important;
+  border-color: var(--ifm-color-primary-darker) !important;
+  color: #fff !important;
 }
 
 /* Give button large size and spacing */
 .give-button.button--lg {
-  padding: 12px 24px;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 0.5rem; /* Reduced space above */
-  margin-bottom: 1rem; /* Reduced space below */
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Mobile-specific spacing */
 @media (max-width: 767px) {
-  .give-button.button--lg {
-    margin-bottom: 1rem;
-  }
+  .give-button.button--lg {
+    margin-bottom: 1rem;
+  }
 }
