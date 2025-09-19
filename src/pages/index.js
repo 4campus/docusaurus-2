@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/voices">
+            to="https://www.4campus.net/voices#listen-now">
             Listen 🔉
           </Link>
         </div>
