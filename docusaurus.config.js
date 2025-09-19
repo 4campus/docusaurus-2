@@ -93,14 +93,7 @@ const config = {
           position: 'left',
           className: 'navbar__item--about-mobile',
         },
-        // Mobile Give link (outside hamburger)
-        {
-          label: 'Give',
-          href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
-          position: 'right',
-          className: 'navbar__item--give-mobile-right',
-        },
-        // Desktop Give button
+        // The one 'Give' button, now visible on both mobile and desktop
         {
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
