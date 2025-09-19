@@ -58,7 +58,7 @@
 /* Donate button */
 .navbar__item--donate .navbar__link {
   background-color: var(--ifm-color-primary);
-  color: #fff !important;
+  color: #fff !important; /* always white */
   padding: 0.4rem 1rem;
   border-radius: 999px;
   font-weight: 600;
@@ -69,15 +69,17 @@
 .navbar__item--donate .navbar__link:hover {
   background-color: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-darker);
-  color: #fff;
+  color: #fff !important; /* enforce white on hover */
 }
 
 [data-theme="dark"] .navbar__item--donate .navbar__link {
   border-color: var(--ifm-color-primary-lightest);
+  color: #fff !important; /* enforce white in dark mode */
 }
 
 [data-theme="dark"] .navbar__item--donate .navbar__link:hover {
   border-color: var(--ifm-color-primary-lighter);
+  color: #fff !important; /* enforce white in dark hover */
 }
 
 /* Hero */
