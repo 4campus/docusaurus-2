@@ -55,7 +55,7 @@
   }
 }
 
-/* Donate button on Navbar */
+/* Navbar Donate button */
 .navbar__item--donate .navbar__link,
 .navbar__item--donate .navbar__link span {
   color: #fff !important;
@@ -86,7 +86,7 @@
   color: #fff !important;
 }
 
-/* Hero */
+/* Hero section */
 .hero {
   background-image: url("/img/banner.jpg");
   background-size: cover;
@@ -196,13 +196,15 @@
 
 /* Give page button - always white text */
 .give-button,
-.give-button.button--primary {
-  color: #fff !important; /* always white */
+.give-button * {
+  color: #fff !important; /* force white on all nested elements */
   background-color: var(--ifm-color-primary) !important;
   border-color: var(--ifm-color-primary-dark) !important;
+  text-decoration: none !important;
 }
 
-.give-button.button--primary:hover {
+.give-button:hover,
+.give-button *:hover {
   background-color: var(--ifm-color-primary-dark) !important;
   border-color: var(--ifm-color-primary-darker) !important;
   color: #fff !important;
