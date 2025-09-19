@@ -9,7 +9,7 @@ In-person conversations with students and leaders about truth in the culture. *T
 
 ![Jason](/img/interview.png)
 
-## Listen Now
+## Latest Recordings
 
 import AudioPlayer2 from '@site/src/components/HomepageFeatures/AudioPlayer2';
 
