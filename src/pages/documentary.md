@@ -5,7 +5,7 @@ description: How a crew of ragtag missionaries responded to 14 student deaths at
 
 # "I want to listen" (2026)
 
-A full-length audio-documentary exploring the real voices of students, community leaders, and thought experts on issues surrounding mental health, spirituality, and their lasting effects on today's youth and culture.
+An original audio-documentary exploring the real voices of students, community leaders, and thought experts on issues surrounding mental health, spirituality, and their lasting effects on today's youth and culture. (Recordings gathered from in-person interviews from 2022 to Present).
 
 <a
   href="https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ"
