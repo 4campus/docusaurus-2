@@ -83,8 +83,8 @@ const config = {
           position: 'left',
         },
         {
-          label: 'Documentary (Patreon)',
-          href: 'https://www.patreon.com/c/4Campus',
+          label: 'Documentary',
+          href: '/documentary',
           position: 'left',
           className: 'navbar__item--donate',
         },
