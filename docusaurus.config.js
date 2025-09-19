@@ -73,7 +73,7 @@ const config = {
           label: 'Documentary',
           href: '/documentary',
           position: 'left',
-          // NO CLASSNAME HERE: This is what was causing the issue.
+          // NO CLASSNAME HERE to keep it in the hamburger menu
         },
         {
           href: 'https://www.bonfire.com/4campus/',
@@ -84,7 +84,7 @@ const config = {
           label: 'Give',
           href: '/give',
           position: 'right',
-          className: 'navbar__item--donate', // Correctly applying the class here.
+          className: 'navbar__item--donate', // Correctly applied to the "Give" link
         },
       ],
     },
