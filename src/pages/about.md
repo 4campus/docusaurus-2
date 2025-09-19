@@ -1,13 +1,13 @@
 ---
-title: Giving
-description: Support our community with a financial investment
+title: About 4campus
+description: Learn how our community is making an impact on the next generation.
 ---
 
-# Support Our Community
+# About 4campus
 
 [4campus](https://www.4campus.net/) exists to provide students with a pathway to knowing Biblical truth and experiencing eternal hope in Jesus Christ. Your financial investments directly support their emotional and spiritual maturity.
 
-## How to Donate
+## Other Ways to Support
 
 💸 **CashApp:** [Give](https://cash.me/$4campus)  
 💳 **PayPal:** [Give](https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ)  
