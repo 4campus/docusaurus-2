@@ -66,7 +66,7 @@ const config = {
       items: [
         {
           label: 'Voices',
-          href: '/voices',
+          href: '/voices#latest-recordings',
           position: 'left',
         },
         {
