@@ -81,18 +81,11 @@ const config = {
           position: 'left',
         },
         {
-          // This is the new mobile "About" link.
+          // Change this label from 'Give' to 'About'
           label: 'About',
           href: '/give',
-          position: 'left',
-          className: 'navbar__item--about',
-        },
-        {
-          // This is the original "Give" button for desktop.
-          label: 'Give',
-          href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
           position: 'right',
-          className: 'navbar__item--donate',
+          className: 'navbar__item--donate', // Keep this class for styling
         },
       ],
     },
