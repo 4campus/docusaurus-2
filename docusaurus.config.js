@@ -81,10 +81,18 @@ const config = {
           position: 'left',
         },
         {
+          // This is the new mobile "About" link.
+          label: 'About',
+          href: '/give',
+          position: 'left',
+          className: 'navbar__item--about',
+        },
+        {
+          // This is the original "Give" button for desktop.
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
           position: 'right',
-          className: 'navbar__item--donate', // Correctly applied to the "Give" link
+          className: 'navbar__item--donate',
         },
       ],
     },
@@ -129,34 +137,33 @@ const config = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    scripts: [
+      {
+        src: 'https://api.reftagger.com/v2/RefTagger.js',
+        async: true,
+      },
+      {
+        src: 'https://api.reftagger.com/v2/RefTagger.js',
+        type: 'text/javascript',
+        innerHTML: `
+          var refTagger = {
+            settings: {
+              bibleVersion: 'ESV'
+            }
+          };
+
+          (function(d, t) {
+            var n=d.querySelector('[nonce]');
+            refTagger.settings.nonce = n && (n.nonce || n.getAttribute('nonce'));
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = 'https://api.reftagger.com/v2/RefTagger.js';
+            g.nonce = refTagger.settings.nonce;
+            s.parentNode.insertBefore(g, s);
+          }(document, 'script'));
+        `,
+      },
+    ],
   },
-
-  scripts: [
-    {
-      src: 'https://api.reftagger.com/v2/RefTagger.js',
-      async: true,
-    },
-    {
-      src: 'https://api.reftagger.com/v2/RefTagger.js',
-      type: 'text/javascript',
-      innerHTML: `
-        var refTagger = {
-          settings: {
-            bibleVersion: 'ESV'
-          }
-        };
-
-        (function(d, t) {
-          var n=d.querySelector('[nonce]');
-          refTagger.settings.nonce = n && (n.nonce || n.getAttribute('nonce'));
-          var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          g.src = 'https://api.reftagger.com/v2/RefTagger.js';
-          g.nonce = refTagger.settings.nonce;
-          s.parentNode.insertBefore(g, s);
-        }(document, 'script'));
-      `,
-    },
-  ],
 };
 
 module.exports = config;
