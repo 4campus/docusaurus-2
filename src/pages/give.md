@@ -16,4 +16,4 @@ description: Support our community with a financial investment
 
 ![Handshake](/img/handshake.png)
 
-Thank you for making an impact and for supporting our community. 🙌
+Thank you for making an impact and supporting our community. 🙌
