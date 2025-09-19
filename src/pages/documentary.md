@@ -12,7 +12,7 @@ An original audio-documentary exploring the real voices of students, community l
   class="button button--lg give-button"
   target="_blank"
 >
-  Give 💗
+  Back the Project 💗
 </a>
 
 ![Jason](/img/audible.png)
