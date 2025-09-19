@@ -55,13 +55,13 @@
   }
 }
 
-/* Navbar Donate / Give link */
-.navbar__item--donate .navbar__link,
-.navbar__item--donate .navbar__link span {
+/* Navbar Give button for Desktop */
+.navbar__item--give-desktop .navbar__link,
+.navbar__item--give-desktop .navbar__link span {
   color: #fff !important;
 }
 
-.navbar__item--donate .navbar__link {
+.navbar__item--give-desktop .navbar__link {
   background-color: var(--ifm-color-primary);
   padding: 0.4rem 1rem;
   border-radius: 999px;
@@ -70,32 +70,22 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover for navbar donate link */
-.navbar__item--donate .navbar__link:hover {
+/* Hover for desktop Give button */
+.navbar__item--give-desktop .navbar__link:hover {
   background-color: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-darker);
   color: #fff !important;
 }
 
-/* Dark mode navbar donate */
-[data-theme="dark"] .navbar__item--donate .navbar__link {
+/* Dark mode for desktop Give button */
+[data-theme="dark"] .navbar__item--give-desktop .navbar__link {
   border-color: var(--ifm-color-primary-lightest);
   color: #fff !important;
 }
 
-[data-theme="dark"] .navbar__item--donate .navbar__link:hover {
+[data-theme="dark"] .navbar__item--give-desktop .navbar__link:hover {
   border-color: var(--ifm-color-primary-lighter);
   color: #fff !important;
-}
-
-/* Give link in navbar - mobile safe */
-@media (max-width: 767px) {
-  .navbar__item--donate {
-    order: 1;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-  }
 }
 
 /* Hero section */
@@ -243,26 +233,31 @@
   margin-bottom: 1rem;
 }
 
-/* Media query to style the "About" link in the mobile menu */
+/* Control visibility for all navigation items */
 @media (max-width: 996px) {
-  /* Remove button styling from the mobile nav item */
-  .navbar__item--donate .navbar__link {
-    background: none;
-    border: none;
-    padding: 0.5rem 1rem;
-  }
-
-  /* Remove the icon for external link on mobile for this specific item */
-  .navbar__item--donate a[target="_blank"]::after {
+  /* Hide desktop Give button and About link on mobile */
+  .navbar__item--give-desktop,
+  .navbar__item--about-desktop {
     display: none;
   }
 
-  .navbar__item--donate .navbar__link:hover {
-    background: none;
+  /* Make sure the mobile links are visible */
+  .navbar__item--give-mobile,
+  .navbar__item--about-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 997px) {
+  /* Hide mobile About and Give links on desktop */
+  .navbar__item--about-mobile,
+  .navbar__item--give-mobile {
+    display: none;
   }
 
-  [data-theme="dark"] .navbar__item--donate .navbar__link {
-    border: none;
-    color: #fff !important;
+  /* Make sure the desktop links are visible */
+  .navbar__item--give-desktop,
+  .navbar__item--about-desktop {
+    display: block;
   }
 }
