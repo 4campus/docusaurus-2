@@ -55,8 +55,8 @@
   }
 }
 
-/* Style for Give link (mobile only) */
-.navbar__item--give-mobile .navbar__link {
+/* Style for Give button on both mobile (right) and desktop */
+.navbar__item--give-desktop .navbar__link {
   color: #fff !important;
   background-color: var(--ifm-color-primary);
   padding: 0.4rem 1rem;
@@ -66,29 +66,22 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover for Give link */
-.navbar__item--give-mobile .navbar__link:hover {
+/* Hover for Give buttons */
+.navbar__item--give-desktop .navbar__link:hover {
   background-color: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-darker);
   color: #fff !important;
 }
 
-/* Dark mode for Give link */
-[data-theme="dark"] .navbar__item--give-mobile .navbar__link {
+/* Dark mode for Give buttons */
+[data-theme="dark"] .navbar__item--give-desktop .navbar__link {
   border-color: var(--ifm-color-primary-lightest);
   color: #fff !important;
 }
 
-[data-theme="dark"] .navbar__item--give-mobile .navbar__link:hover {
+[data-theme="dark"] .navbar__item--give-desktop .navbar__link:hover {
   border-color: var(--ifm-color-primary-lighter);
   color: #fff !important;
-}
-
-/* Hide Give on desktop */
-@media (min-width: 997px) {
-  .navbar__item--give-mobile {
-    display: none !important;
-  }
 }
 
 /* Hero section */
@@ -212,11 +205,13 @@
   mix-blend-mode: normal !important;
 }
 
+/* Dark mode specific for Give button to ensure white text */
 [data-theme="dark"] .give-button,
 [data-theme="dark"] .give-button * {
   color: #fff !important;
 }
 
+/* Hover effect */
 .give-button:hover,
 .give-button *:hover {
   background-color: var(--ifm-color-primary-dark) !important;
@@ -224,6 +219,7 @@
   color: #fff !important;
 }
 
+/* Give button large size and spacing */
 .give-button.button--lg {
   padding: 12px 24px;
   font-weight: 600;
@@ -231,4 +227,33 @@
   text-decoration: none;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+}
+
+/* Control visibility for all navigation items */
+@media (max-width: 996px) {
+  /* Hide desktop links on mobile, except for the Give button */
+  .navbar__item--about-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 997px) {
+  /* Hide mobile links on desktop */
+  .navbar__item--about-mobile {
+    display: none;
+  }
+  /* Hide the "Give" button on desktop */
+  .navbar__item--give-mobile {
+    display: none;
+  }
+}
+
+/* New CSS to move the 'Give' link out of the side menu on mobile and hide it on desktop*/
+@media (max-width: 996px) {
+  .navbar__menu--opened .navbar__item--give-mobile {
+    display: none;
+  }
+  .navbar__toggle + .navbar__item--give-mobile {
+    display: block !important;
+  }
 }
