@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rally.svg').default,
     description: (
       <>
-        Engage in the spiritual battle for our youth and nation. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community to connect with other like-minded students and peers. 
+        Engage in the spiritual battle for our youth and nation. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community to connect with other like-minded peers. 
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/shield.svg').default,
     description: (
       <>
-        Take offensive measures by standing your ground against oppressive beliefs. Contend for your beliefs with healthy methods of discourse.
+        Take offensive measures by standing your ground against oppressive beliefs. Contend for your faith with healthy methods of discourse.
       </>
     ),
   },
