@@ -797,7 +797,7 @@ Here is how it works:
 **Useful Tools:**
 
 - [Blue Letter Bible w/Study and Search Tools](https://www.blueletterbible.org/study/ccc/chs_PuritanCatechism.cfm)
-- [Sonic Light](https://planobiblechapel.org/soniclight/)
+- [Sonic Light](https://soniclight.com/)
 - [Got Questions?](https://www.gotquestions.org/Biblical-hermeneutics.html)
 - [Practical Tips for Bible Memory](https://www.youtube.com/watch?v=ugSMI1KEs5A)
 - [How to Study Bible for Devotions and Journaling](https://www.tvcresources.net/wp-content/uploads/2020/02/201006260900FMWC22ATAAA_MattChandlerJoshPatterson_SaturdaySeminar-HowToStudyTheBible.mp3)
