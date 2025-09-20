@@ -4,20 +4,20 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Victory Mindset',
-    Svg: require('@site/static/img/book.svg').default,
-    description: (
-      <>
-        Develop a winning strategy by replacing cultural lies with Biblical truth. Learn the ancient ways of dealing with stress, depression, and moral purity.
-      </>
-    ),
-  },
-  {
     title: 'Rally Together',
     Svg: require('@site/static/img/rally.svg').default,
     description: (
       <>
         Engage in the spiritual battle for our youth and nation. Join our <a href="https://discord.gg/Tb478Cud" target="blank">Discord</a> community to connect with other like-minded students and peers. 
+      </>
+    ),
+  },
+  {
+    title: 'Victory Mindset',
+    Svg: require('@site/static/img/book.svg').default,
+    description: (
+      <>
+        Develop a winning strategy by replacing cultural lies with Biblical truth. Learn the ancient ways of dealing with stress, depression, and moral purity.
       </>
     ),
   },
