@@ -68,6 +68,7 @@ const config = {
           label: 'Questions?',
           href: '/docs/Questions',
           position: 'left',
+          className: 'navbar__item--questions',
         },
         {
           label: 'Voices',
@@ -84,26 +85,16 @@ const config = {
           label: 'Store',
           position: 'left',
         },
-        // Desktop About link
         {
           label: 'About',
           href: '/give',
           position: 'left',
-          className: 'navbar__item--about-desktop',
         },
-        // Mobile About link (in hamburger)
-        {
-          label: 'Give',
-          href: '/give',
-          position: 'left',
-          className: 'navbar__item--give-mobile',
-        },
-        // The one 'Give' button, now visible on both mobile and desktop
         {
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
           position: 'right',
-          className: 'navbar__item--give-mobile',
+          className: 'navbar__item--give-desktop',
         },
       ],
     },
