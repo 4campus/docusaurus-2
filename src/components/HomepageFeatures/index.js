@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/shield.svg').default,
     description: (
       <>
-        Take offensive measures by standing your ground against oppressive beliefs. Combat ideas with effective methods of discourse.
+        Take offensive measures by standing your ground against oppressive beliefs. Contend for your beliefs with healthy methods of discourse.
       </>
     ),
   },
