@@ -65,8 +65,8 @@ const config = {
       },
       items: [
         {
-          label: '10 Questions',
-          href: '/docs/questions',
+          label: 'Questions?',
+          href: '/docs/Questions',
           position: 'left',
         },
         {
@@ -96,7 +96,7 @@ const config = {
           label: 'Give',
           href: '/give',
           position: 'left',
-          className: 'navbar__item--give-desktop',
+          className: 'navbar__item--give-mobile',
         },
         // The one 'Give' button, now visible on both mobile and desktop
         {
