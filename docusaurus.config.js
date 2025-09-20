@@ -93,10 +93,10 @@ const config = {
         },
         // Mobile About link (in hamburger)
         {
-          label: 'About',
+          label: 'Give',
           href: '/give',
           position: 'left',
-          className: 'navbar__item--about-mobile',
+          className: 'navbar__item--give-desktop',
         },
         // The one 'Give' button, now visible on both mobile and desktop
         {
