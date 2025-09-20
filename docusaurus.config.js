@@ -66,7 +66,7 @@ const config = {
       items: [
         {
           label: '10 Questions',
-          href: '/questions',
+          href: '/docs/questions',
           position: 'left',
         },
         {
