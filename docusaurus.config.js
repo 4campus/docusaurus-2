@@ -98,7 +98,7 @@ const config = {
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
           position: 'right',
-          className: 'navbar__item--give-desktop',
+          className: 'navbar__item--give-mobile',
         },
       ],
     },
