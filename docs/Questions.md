@@ -15,7 +15,7 @@ Here are some of the top questions students ask, including their answers accordi
 ![Alt text](../static/img/02_galaxy.jpg)
 
 ### **01 Is the Bible factual?**
-Would it surprise you to know that the books of the Bible are the most analyzed, researched, and **historically reliable** documents ever recorded? In fact, there are nearly 6,000 surviving manuscripts of the New Testament alone, with the closest competitor being Homer’s *The Iliad*, which has only 600 existing copies (see [article](https://reasonabletheology.org/reliability-bible-4-quick-thoughts/)). Even more astonishing is the foretelling—prophesying—of future events with remarkable accuracy and clarity, such as the birth and exile of a Jewish nation, to the life, death, and resurrection of a Messiah, **perfectly fulfilled** in Jesus of Nazareth (see [reference chart](https://c6983374-a0d7-41a4-954e-63849b5a45cb.filesusr.com/ugd/717459_2e9e03d70f7440f28592f4fae1c1d002.pdf)).
+Would it surprise you to know that the books of the Bible are the most analyzed, researched, and **historically reliable** documents ever recorded? In fact, there are nearly 6,000 surviving manuscripts of the New Testament alone, with the closest competitor being Homer’s *The Iliad*, which has only 600 existing copies (see [article](https://reasonabletheology.org/reliability-bible-4-quick-thoughts/)). Even more astonishing is the foretelling—prophesying—of future events with remarkable accuracy and clarity, such as the birth and exile of a Jewish nation, to the life, death, and resurrection of a Messiah, **perfectly fulfilled** in Jesus of Nazareth (see [reference chart](https://raw.githubusercontent.com/4campus/docusaurus-2/main/static/docs/OldTestamentPropheciesofJesus.pdf)).
 
 Learn more
 
