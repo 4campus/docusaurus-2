@@ -90,6 +90,7 @@ const config = {
           href: '/give',
           position: 'left',
         },
+        // Give button — always pinned right
         {
           label: 'Give',
           href: 'https://www.paypal.com/donate/?hosted_button_id=53SQPWUPYSYQQ',
@@ -104,32 +105,20 @@ const config = {
         {
           title: 'Resources',
           items: [
-            {
-              label: 'AncientPaths',
-              to: '/docs/AncientPaths',
-            },
-            {
-              label: 'My Son Rising',
-              to: '/my-son-rising',
-            },
+            { label: 'AncientPaths', to: '/docs/AncientPaths' },
+            { label: 'My Son Rising', to: '/my-son-rising' },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/Tb478Cud',
-            },
+            { label: 'Discord', href: 'https://discord.gg/Tb478Cud' },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Contact',
-              href: 'mailto:mail.4campus@gmail.com',
-            },
+            { label: 'Contact', href: 'mailto:mail.4campus@gmail.com' },
           ],
         },
       ],
