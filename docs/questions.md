@@ -6,8 +6,7 @@ import RefreshOnFirstLoad from '@site/src/components/HomepageFeatures/RefreshOnF
 
 <RefreshOnFirstLoad />
 
-## QUESTIONS?
-(Jesus/Bible/Truth)
+## (Jesus/Bible/Truth)
 
 ![Alt text](../static/img/01_open-bible.jpg)
 
