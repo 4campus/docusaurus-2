@@ -105,7 +105,7 @@ const config = {
         {
           title: 'Resources',
           items: [
-            { label: 'My Son Rising', to: '/docs/AncientPaths' },
+            { label: 'Ancient Paths', to: '/docs/AncientPaths' },
             { label: 'My Son Rising', to: '/my-son-rising' },
           ],
         },
